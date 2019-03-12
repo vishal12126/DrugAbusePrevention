@@ -1,0 +1,14 @@
+<app-header ></app-header>
+<div  class="container">
+<div *ngFor="let patient of patientHistoryDetails;" class="card">
+    <div class="card-body">
+      <label><b> Doctor</b>:</label>
+      <p>{{ patient.doctor }}</p>
+      <label><b> Visit Date</b>:</label>
+      <p>{{ patient.date }}</p>
+      <label><b>Medicines</b>:</label>
+      <p>{{ patient.medicines }}</p>
+    </div>
+</div>
+</div>
+
